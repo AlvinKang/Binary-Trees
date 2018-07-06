@@ -16,6 +16,7 @@ function printPathsRecurse(node, path) {
   if (node.left === null && node.right === null) printPath(path);
   else {
     // Recurse into children
+    // IMPORTANT TO MAKE COPY OF PATH FOR EACH RECURSIVE CALL
     if (node.left !== null) printPathsRecurse(node.left, path.slice());
     if (node.right !== null) printPathsRecurse(node.right, path.slice());
   }
