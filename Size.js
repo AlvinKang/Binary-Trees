@@ -1,5 +1,4 @@
 // This problem demonstrates simple binary tree traversal. Given a binary tree, count the number of nodes in the tree.
-
 function size(node) {
   // BASE CASE: Reach end of tree
   if (node === null) return 0;
