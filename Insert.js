@@ -1,7 +1,7 @@
 import Node from "./BinaryTreeNode";
 
 // ITERATIVE: Given a BST insert new node at the appropriate location with `value` as its value and return the tree (root)
-function insert(root, value) {
+export function insert(root, value) {
   const node = new Node(value);
 
   // If tree is empty, just return this node
@@ -24,7 +24,7 @@ function insert(root, value) {
 }
 
 // RECURSIVE
-function recursiveInsert(root, value) {
+export function recursiveInsert(root, value) {
   // If tree is empty, return just the new node
   if (root === null) return new Node(value);
   // Otherwise just recurse down the BST
